@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pib-3o-3as">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yia-aw-qts">
+            <objects>
+                <tabBarController id="pib-3o-3as" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="31a-i5-RdA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="sPO-em-1Pf" kind="relationship" relationship="viewControllers" id="BXh-tt-Hi8"/>
+                        <segue destination="jD7-lj-2D8" kind="relationship" relationship="viewControllers" id="5dr-mg-dQs"/>
+                        <segue destination="N0C-ui-cDA" kind="relationship" relationship="viewControllers" id="uMN-w9-rPI"/>
+                        <segue destination="m5S-V5-B8b" kind="relationship" relationship="viewControllers" id="iwk-ak-5EK"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bbp-SC-SXP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-852" y="-262"/>
+        </scene>
+        <!--Kullanıcı-->
+        <scene sceneID="kvP-Em-mro">
+            <objects>
+                <navigationController id="sPO-em-1Pf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Kullanıcı" image="user3" id="REB-iL-eJL"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="epO-v8-8sv">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Pa6-SJ-UaO" kind="relationship" relationship="rootViewController" id="Fwp-LY-Q4x"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GQr-eN-llp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="193" y="-889"/>
+        </scene>
+        <!--UserAppList-->
+        <scene sceneID="efi-ZN-Xvu">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UserAppList" id="Pa6-SJ-UaO" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="xeh-OP-4vM"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jdl-wM-sRz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="975" y="-879"/>
+        </scene>
+        <!--Sistem-->
+        <scene sceneID="BNM-gI-o4p">
+            <objects>
+                <navigationController id="jD7-lj-2D8" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Sistem" image="settings" id="u9o-b5-JyA"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8qy-gl-Wyw">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="9Aw-iN-PHF" kind="relationship" relationship="rootViewController" id="Mrs-gV-AqW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V1u-TW-X9W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="193" y="-94"/>
+        </scene>
+        <!--SystemAppList-->
+        <scene sceneID="Fo7-Mb-6wd">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SystemAppList" id="9Aw-iN-PHF" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="2Zw-4P-xEa"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oHZ-vA-Ltm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1024" y="-134"/>
+        </scene>
+        <!--Cihaz Bilgisi-->
+        <scene sceneID="FIb-s2-zoA">
+            <objects>
+                <navigationController id="N0C-ui-cDA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Cihaz Bilgisi" image="smartphone" id="Tsj-Kf-jq9"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Jgx-3t-ZNB">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="FKf-NT-8as" kind="relationship" relationship="rootViewController" id="24l-lH-w2d"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7OZ-97-ytL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="193" y="664"/>
+        </scene>
+        <!--DeviceInfo-->
+        <scene sceneID="uHI-jz-3Ha">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DeviceInfo" id="FKf-NT-8as" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="kRG-Vu-dKz"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cDP-I5-2g5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="937" y="664"/>
+        </scene>
+        <!--Daha Fazlası-->
+        <scene sceneID="1JE-Cx-IZQ">
+            <objects>
+                <navigationController id="m5S-V5-B8b" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Daha Fazlası" image="ellipsis" id="JNK-KX-Jvp"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4N3-fT-3GO">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="KB1-9g-yzQ" kind="relationship" relationship="rootViewController" id="Ar8-N1-Vcj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QIx-ya-0fY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="193" y="1435"/>
+        </scene>
+        <!--More-->
+        <scene sceneID="6ew-3b-nwt">
+            <objects>
+                <viewControllerPlaceholder storyboardName="More" id="KB1-9g-yzQ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="G1G-jh-Ll3"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hem-gX-5EA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="905" y="1424"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ellipsis" width="21" height="21"/>
+        <image name="settings" width="21" height="21"/>
+        <image name="smartphone" width="21" height="21"/>
+        <image name="user3" width="21" height="21"/>
+    </resources>
+</document>
